@@ -1,2 +1,2 @@
-# ProjetoHotelCSS
-Projeto de um site de hotel utilizando CSS3
+# Projeto de um site de hotel utilizando CSS3
+

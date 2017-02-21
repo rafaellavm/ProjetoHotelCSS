@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Verdana,Georgia;
+    font-size: 14px;
+    color: #000000;
+    background: url('../imgs/bg_pagina_167x167.jpg')
+}
+
+/* estrutura do layout */
+
+.container{
+    max-width: 940px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+.container .row{
+
+}
+
+.coluna_logomarca{
+    width: 270px;
+    float:left;
+}
+
+.coluna_menu{
+    width: 647px;
+    float: right;
+}

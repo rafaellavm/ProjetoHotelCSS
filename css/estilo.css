@@ -1,50 +1,49 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 
-body{
-    font-family: Arial, Verdana,Georgia;
+body {
+    font-family: Arial, Verdana, Georgia;
     font-size: 14px;
     color: #000000;
     background: url('../imgs/bg_pagina_167x167.jpg')
 }
 
-div{
+div {
     /* display table se adapta ao seu conteúdo 
     A declaração display: table faz com que o elemento HTML seja renderizado como tabela. */
     display: table;
     width: 100%;
 }
 
+
 /* estrutura do layout */
 
-.container{
+.container {
     max-width: 940px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display:block;
+    display: block;
 }
 
-.container .row{
+.container .row {}
 
-}
-
-.coluna_logomarca{
+.coluna_logomarca {
     width: 270px;
-    float:left;
-   
+    float: left;
 }
 
-.coluna_menu{
+.coluna_menu {
     width: 647px;
     float: right;
 }
 
+
 /* definições de menu */
 
-.container_menu{
+.container_menu {
     background: url('../imgs/bg_menu_1x49.jpg') top repeat-x;
     box-shadow: 5px 5px 5px black;
     -webkit-box-shadow: 5px 5px 5px black;
@@ -52,33 +51,60 @@ div{
     -o-box-shadow: 5px 5px 5px black;
     margin-top: 20px;
 }
-.container_menu a{
+
+.container_menu a {
     text-decoration: none;
-    
     /*display: block
   A declaração display: block faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são. 
   Um bloco contém um espaço em branco tanto em cima como embaixo e não permite outros elementos HTML ao lado, exceto quando 
   tiver sido declarado ao contrário (por exemplo, declarar a propriedade float para o elemento próximo ao bloco). */
     display: block;
-    float:left;
+    float: left;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left:20px;
+    padding-left: 20px;
     padding-right: 20px;
-    color:black;
+    color: black;
+    transition: background 0.6s ease-out, color 0.6s ease-out;
 }
+
+.container_menu a:hover {
+    color: white;
+    background: #879B25;
+    /*background: url('../imgs/bg_menu_hover_1x49.jpg') top repeat-x;*/
+}
+
+.container_menu a:first-child {
+    margin-left: 6px;
+}
+
+
+/* definições do slider */
+
+#containerSlider {
+    width: 925px;
+    height: 295px;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px #666, -1px -1px 8px #666;
+    
+    /* pra centraliar a imagem */
+    margin-left: auto;
+    margin-right:auto;
+}
+
 
 /* classes de uso geral */
 
-.bordaArredondada{
+.bordaArredondada {
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -o-border-radius: 8px;
 }
 
-/* espacamento Inferior*/
-ei{
 
+/* espacamento Inferior*/
+
+ei {
     margin-bottom: 25px;
 }

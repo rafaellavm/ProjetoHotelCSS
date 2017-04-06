@@ -1,110 +1,155 @@
 * {
-    padding: 0px;
-    margin: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 body {
-    font-family: Arial, Verdana, Georgia;
-    font-size: 14px;
-    color: #000000;
-    background: url('../imgs/bg_pagina_167x167.jpg')
+	background: url('../imgs/bg_pagina_167x167.jpg');
+	font-family: Arial, verdana, georgia;
+	font-size: 14px;
+	color: black;
 }
 
 div {
-    /* display table se adapta ao seu conteúdo 
+
+/* display table se adapta ao seu conteúdo 
     A declaração display: table faz com que o elemento HTML seja renderizado como tabela. */
-    display: table;
-    width: 100%;
+	display: table;
+	width: 100%;
 }
 
+p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 /* estrutura do layout */
-
 .container {
-    max-width: 940px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+	display: block;
+	width: 100%;
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.container .row {}
+.container .row {
+	display: table;
+	width: 100%;
+}
 
 .coluna_logomarca {
-    width: 270px;
-    float: left;
+	width: 270px;
+	float: left;
+	margin-top: 15px;
 }
 
 .coluna_menu {
-    width: 647px;
-    float: right;
+	width: 647px;
+	float: right;
 }
 
+.coluna_areaNoticias {
+	float:left;
+	width: 456px;
+}
 
-/* definições de menu */
+.coluna_areaProdutos {
+	float: right;
+	width: 456px;
+}
 
+.coluna_produto01 {
+	float: left;
+	width: 220px;
+}
+
+.coluna_produto02 {
+	float: right;
+	width: 220px;
+}
+
+/* defini��es de menu */
 .container_menu {
-    background: url('../imgs/bg_menu_1x49.jpg') top repeat-x;
-    box-shadow: 5px 5px 5px black;
-    -webkit-box-shadow: 5px 5px 5px black;
-    -moz-box-shadow: 5px 5px 5px black;
-    -o-box-shadow: 5px 5px 5px black;
-    margin-top: 20px;
+	background: url(../imgs/bg_menu_1x49.jpg) top repeat-x; 	
+	box-shadow: 5px 5px 5px black;
+	-webkit-box-shadow: 5px 5px 5px black;
+	-moz-box-shadow: 5px 5px 5px black;
+	-o-box-shadow: 5px 5px 5px black;
+	margin-top: 15px;
 }
 
 .container_menu a {
-    text-decoration: none;
-    /*display: block
+	text-decoration: none;
+ /*display: block
   A declaração display: block faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são. 
   Um bloco contém um espaço em branco tanto em cima como embaixo e não permite outros elementos HTML ao lado, exceto quando 
   tiver sido declarado ao contrário (por exemplo, declarar a propriedade float para o elemento próximo ao bloco). */
-    display: block;
-    float: left;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: black;
-    transition: background 0.6s ease-out, color 0.6s ease-out;
+
+	display: block;
+	float: left;
+	padding: 16px 20px;
+	color: black;
+	transition: background 0.6s ease-out, color 0.6s ease-out;
+	-webkit-transition: background 0.6s ease-out, color 0.6s ease-out;
+	-moz-transition: background 0.6s ease-out, color 0.6s ease-out;
+	-o-transition: background 0.6s ease-out, color 0.6s ease-out;
 }
 
 .container_menu a:hover {
-    color: white;
-    background: #879B25;
-    /*background: url('../imgs/bg_menu_hover_1x49.jpg') top repeat-x;*/
+	color: white;
+	background: #879B25;
+	/* background: url(imgs/bg_menu_hover_1x49.jpg) top repeat-x; */
 }
 
 .container_menu a:first-child {
-    margin-left: 6px;
+	margin-left: 6px;
 }
 
-
-/* definições do slider */
+/* defini��es do slider */
 
 #containerSlider {
-    width: 925px;
-    height: 295px;
-    overflow: hidden;
-    box-shadow: 1px 1px 8px #666, -1px -1px 8px #666;
-    
-    /* pra centraliar a imagem */
-    margin-left: auto;
-    margin-right:auto;
+	width: 925px;
+	height: 295px;
+	overflow: hidden;
+	box-shadow: 1px 1px 8px black, -1px -1px 8px black;
+	-webkit-box-shadow: 1px 1px 8px black, -1px -1px 8px black;
+	-moz-box-shadow: 1px 1px 8px black, -1px -1px 8px black;
+	-o-box-shadow: 1px 1px 8px black, -1px -1px 8px black;
+	
+	/* pra centraliar a imagem */
+	margin-left: auto;
+	margin-right: auto;
 }
 
+/*  classes de uso geral */
 
-/* classes de uso geral */
+.titulo {
+	font-size:23px;
+	padding-bottom: 10px;
+	border-bottom:1px dashed gray;
+}
 
 .bordaArredondada {
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -o-border-radius: 8px;
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
 }
 
+.divBordaCinzaVazada {
+	border: 1px solid gray;
+}
 
-/* espacamento Inferior*/
+.marginInterna {
+	margin: 6px;
+	width: 97%;
+}
 
-ei {
-    margin-bottom: 25px;
+.fundoBrancoTransp {
+	background: url(../imgs/bg_branco_transp.png);
+}
+
+/* espa�amento inferior */
+.ei {
+	margin-bottom:22px;
 }
